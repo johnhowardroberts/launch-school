@@ -115,7 +115,7 @@ summary
 
 prompt(summary)
 
-# When we have the three pieces of information, calculate three things
+# When we have the three pieces of information, calculate four things
 
 # - 1. monthly interest rate,  calculated from the APR
 
@@ -126,11 +126,13 @@ monthly_interest_rate = (apr.to_f / 100) / MONTHS_IN_YEAR
 total_mortgage_length_months = (mortgage_years.to_i * MONTHS_IN_YEAR)\
   + mortgage_months.to_i
 
+# - 3. monthly payments 
+
 monthly_payment = mortgage_amount.to_i\
   * (monthly_interest_rate\
   / (1 - (1 + monthly_interest_rate)**-total_mortgage_length_months))
 
-# - 3. total loan cost
+# - 4. total loan cost
 
 total_loan_cost = (monthly_interest_rate * mortgage_amount.to_i\
   * total_mortgage_length_months)\
