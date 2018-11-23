@@ -8,7 +8,7 @@ WINNING_CHOICES = {
   'lizard' =>   ['paper', 'spock']
 }
 
-WINNING_SCORE = 1
+WINNING_SCORE = 5
 
 def clear_screen
   system('clear') || system('cls')
@@ -28,6 +28,10 @@ end
 
 def display_welcome_message
   puts "Welcome to Rock Paper Scissors Lizard Spock! First to #{WINNING_SCORE} wins."
+end
+
+def display_goodbye_message
+  puts "Thank you for playing, goodbye!"
 end
 
 def print_loading_next_round
@@ -168,4 +172,4 @@ print_closing_game
 line_break
 load_delay_long
 clear_screen
-prompt("Thank you for playing, goodbye!")
+display_goodbye_message
