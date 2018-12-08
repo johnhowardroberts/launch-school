@@ -16,10 +16,9 @@ end
 
 # further exploration
 
-def is_odd_remainder(num)
+def is_odd_remainder?(num)
   num.remainder(2) != 0
 end
-
 
 puts is_odd?(2)    # => false
 puts is_odd?(5)    # => true
@@ -35,9 +34,9 @@ puts is_odd_refactored?(-8)   # => false
 puts is_odd_refactored?(0)    # => false
 puts is_odd_refactored?(7)    # => true
 puts '===='
-puts is_odd_remainder(2)    # => false
-puts is_odd_remainder(5)    # => true
-puts is_odd_remainder(-17)  # => true
-puts is_odd_remainder(-8)   # => false
-puts is_odd_remainder(0)    # => false
-puts is_odd_remainder(7)    # => true
+puts is_odd_remainder?(2)    # => false
+puts is_odd_remainder?(5)    # => true
+puts is_odd_remainder?(-17)  # => true
+puts is_odd_remainder?(-8)   # => false
+puts is_odd_remainder?(0)    # => false
+puts is_odd_remainder?(7)    # => true

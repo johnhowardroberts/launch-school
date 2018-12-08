@@ -27,4 +27,6 @@ end
 
 print_string('The Flintstones Rock!')
 
-# refactored solution
+# refactored solution suggested
+
+10.times { |number| puts (" " * number) + "The Flintstones Rock!" }

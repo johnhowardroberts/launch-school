@@ -33,3 +33,13 @@ def factors(number)
 end
 
 factors(10)
+
+# Bonus 1
+# What is the purpose of the number % divisor == 0 ?
+
+# looks to see whether the remainder of the calculation is zero, which is the qualifier for whether number is a factor or not.
+#
+# Bonus 2
+# What is the purpose of the second-to-last line in the method (the divisors before the method's end)?
+
+#

@@ -39,12 +39,12 @@ def fun_with_ids
     puts "d_outer inside after reassignment is #{d_outer} with an id of: #{d_outer_id} before and: #{d_outer.object_id} after."
 
 
-    a_inner = a_outer #
-    b_inner = b_outer
-    c_inner = c_outer
-    d_inner = c_inner[0]
+    a_inner = a_outer # 22
+    b_inner = b_outer # "thirty three"
+    c_inner = c_outer # [44]
+    d_inner = c_inner[0] # 44
 
-    a_inner_id = a_inner.object_id
+    a_inner_id = a_inner.object_id # both variables are assoicated with the same object, so they will be the same object ids inside and outside the block
     b_inner_id = b_inner.object_id
     c_inner_id = c_inner.object_id
     d_inner_id = d_inner.object_id

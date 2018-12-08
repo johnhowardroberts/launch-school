@@ -4,10 +4,10 @@ def fun_with_ids
   c_outer = [42]
   d_outer = c_outer[0]
 
-  a_outer_id = a_outer.object_id
-  b_outer_id = b_outer.object_id
-  c_outer_id = c_outer.object_id
-  d_outer_id = d_outer.object_id
+  a_outer_id = a_outer.object_id # 85
+  b_outer_id = b_outer.object_id # 70195183983680
+  c_outer_id = c_outer.object_id # 70195183983640
+  d_outer_id = d_outer.object_id # 85
 
   puts "1.=================="
   puts "a_outer is #{a_outer} with an id of: #{a_outer_id} before the block."
