@@ -27,8 +27,9 @@
 # - after iteration complete, divide counter by array size
 
 #MUCH SIMPLER ALGORITHM
-# - use Array#sum to add the array elements together
 
+# - use Enumerable#inject to combine all the elements of the array together
+# then simply divide by the #size of the Array
 
 #
 # CODE
